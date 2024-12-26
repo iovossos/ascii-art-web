@@ -1,0 +1,158 @@
+/* importing Meow font */
+@font-face {
+    font-family: 'Meow';
+    src: url('/fonts/Meow.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat center center / cover;
+}
+
+/* THE BIG ASS CONTAINER THAT IS THE PROBLEM */
+.container {
+    width: 80%; 
+    max-width: 700px; 
+    text-align: center;
+    padding: 15px; 
+    background: rgba(231, 228, 230, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.3);
+    border: 3px solid #000000; 
+    position: relative;
+    margin: auto;
+}
+
+/* ASCII ART GENERATOR TITLE */
+h1 {
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+    margin-top: 15px; 
+    font-family: 'Meow', sans-serif;
+}
+
+/* this is where you select fonts */
+select, button, pre {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px; 
+    border-radius: 8px; 
+    font-size: 1em; 
+    text-align: center;
+    box-sizing: border-box;
+    background: #efe3d5;
+    height: 50px; 
+    resize: vertical;
+    overflow: auto;
+}
+
+/* this is the enter text here ig */
+textarea {
+    width: 100%;
+    margin: 15px 0; 
+    padding: 15px; 
+    border-radius: 8px; 
+    font-size: 1em; 
+    text-align: center;
+    box-sizing: border-box;
+    background: #efe3d5;
+    height: 80px; 
+    resize: vertical;
+    overflow: auto;
+}
+
+/* this is for the small container that shows the result in ascii art */
+pre {
+    text-align: center;
+    background: #efe3d5;
+    padding: 10px; 
+    padding-top: 30px;
+    border-radius: 5px;
+    padding-bottom: 30px; 
+    white-space: pre;
+    overflow-x: auto;
+    font-family: monospace;
+    min-height: 15em; 
+}
+
+
+/* for button do not touch it is straight from universe.io */
+/* for button do not touch it is straight from universe.io */
+/* for button do not touch it is straight from universe.io */
+/* for button do not touch it is straight from universe.io */
+/* for button do not touch it is straight from universe.io */
+.button {
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 0.6em 2em;
+    background: #000000;
+    transition: 0.2s;
+    font-size: 1.2em;
+}
+
+.button:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+
+button {
+    height: 3em;
+    width: 8em;
+    border: none;
+    border-radius: 10em;
+    background: #000000;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+button:hover {
+    animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}

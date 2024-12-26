@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Meow';
+    src: url('/fonts/Meow.ttf') format('truetype');
+}
+
+body {
+    margin: 0; 
+    width: 100%;
+    height: 100vh; 
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+}
+
+.container {
+    width: 700px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(231, 228, 230, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 3);
+    flex-shrink: 0;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+h1 {
+    font-size: 4.7em;
+    margin-bottom: 12px;
+    margin-top: 35px;
+    font-family: 'Meow', sans-serif; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.button {
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 0.6em 2em;
+    background: #000000;
+    transition: 0.2s;
+    font-size: 1.2em;
+    text-decoration: none; 
+}
+
+.button:hover {
+    animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
