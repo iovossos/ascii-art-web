@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Downloading...</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script>
+        window.onload = function() {
+            // Create a hidden iframe to initiate the download
+            var iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = '/download-file';
+            document.body.appendChild(iframe);
+
+            // Redirect to home page after the download starts
+            setTimeout(function() {
+                window.location.href = '/';
+            }, 1000); // Adjust delay if necessary
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Downloading your file... You will be redirected shortly.</p>
+    </div>
+</body>
+</html>
