@@ -18,31 +18,6 @@ The server is built in Go and handles requests to generate ASCII art, serve stat
 
 This project is a fun exercise in handling web requests, file serving, and basic ASCII art manipulation using only the standard Go libraries.
 
-## Authors
-
-                                                                  
-                        _|     _| _|       _|                         
-    _|    _|   _|_|_| _|_|_|_|    _|  _|   _|  _|     _|_|   _|  _|_| 
-    _|    _| _|_|       _|     _| _|_|     _|_|     _|_|_|_| _|_|     
-    _|    _|     _|_|   _|     _| _|  _|   _|  _|   _|       _|       
-      _|_|_| _|_|_|       _|_| _| _|    _| _|    _|   _|_|_| _|      
-
- 
-                                                                  
-                                                                   
-        Uipko Stikker
-                                                                   
-
-     _                                            
-    (_)                                           
-     _  __   __   ___    ___   ___    ___    ___  
-    | | \ \ / /  / _ \  / __| / __|  / _ \  / __| 
-    | |  \ V /  | (_) | \__ \ \__ \ | (_) | \__ \ 
-    |_|   \_/    \___/  |___/ |___/  \___/  |___/
-	    Ioannis Vossos
-
-\
-
 ## Usage
 
  - **Start the Server**
@@ -71,25 +46,6 @@ This project is a fun exercise in handling web requests, file serving, and basic
     Run 'go test' from the terminal, to use the tester program that tests if the HTTP error codes are returned properly.
 
 
-## Implementation Details
-
-
-```mermaid
-graph 
-A[Set up routes, serve static files, <br/> and initialize ListenAndServe] --> B(localhost:8080)
-D -.templates/index.html<br/>static/styles.css --> H(index.html)
-D --templates/400.html<br/>static/styles.css<br/>static/400.png--> F[400]
-D --templates/404.html<br/>static/styles.css<br/>static/404.png--> C[404]
-
-B --> D{handlers.go}
-
-D --templates/500.html<br/>static/styles.css<br/>static/500.png--> G[500]
-D --> I{{asciiart.go}} -- templates/index.html<br/>static/styles.css--> E[ /ascii-art - Results page]
-H -.- E
-
-
-
-```
 The ASCII Art Generator is organized to handle different routes, serve necessary static files, and render ASCII art in response to user input. Here’s a breakdown of how it all works:
 
 1.  **Server Setup and Routing**  
@@ -128,3 +84,8 @@ The ASCII Art Generator is organized to handle different routes, serve necessary
 3. Support live view and multiple output areas at the same time.
 4. Button that helps you directly copy / share the ASCII art.
 5. Remove the hidden messages from the source code of index.html.
+
+## Authors
+
+1. [iovossos](https://github.com/iovossos)
+2. [stikkeruip](https://github.com/stikkeruip)
